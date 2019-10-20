@@ -1,0 +1,17 @@
+{var $imprint = $pages->get(1116)}
+{var $privacy = $pages->get(1117)}
+
+<footer>
+    <div class="footer--inner">
+        <nav class="footer--nav">
+            <ul>
+                <li><a href="{$imprint->url}">{$imprint->title}</a></li>
+                <li><a href="{$privacy->url}">{$privacy->title}</a></li>
+                <li class="footer--nav--social">
+                    <a href="#" target="_blank"><svg class="icon-facebook-inverse-1_5x"><use xlink:href="/site/templates/dist/svg/sprites.svg#icon-facebook-inverse"></use></svg></a>
+                    <a href="#" target="_blank"><svg class="icon-instagram-1_5x"><use xlink:href="/site/templates/dist/svg/sprites.svg#icon-instagram"></use></svg></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>

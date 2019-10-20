@@ -1,0 +1,9 @@
+<div class="blocks blocks__{$page->template}">
+    {foreach $blocks as $block}
+    <div class="block block__{$block->type} block__{$iterator->counter}">
+        {include './blocks/'.$block->type.'.latte', block => $block}
+    </div>
+    {/foreach}
+
+    {$bestseller|noescape}
+</div
