@@ -30,6 +30,7 @@ foreach ($jsRefs as $jsRef) {
 $view->cssRefsOut = file_get_contents($config->paths->dist.'/css.php');
 
 // Set Main navigation output
+$navModule = $modules->get("MarkupSimpleNavigation");
 $view->mainNavOut = $navModule->render([
     'show_root' => false,
     'levels' => true,
